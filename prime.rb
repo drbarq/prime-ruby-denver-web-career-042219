@@ -15,7 +15,7 @@ def prime?(number)
   end
 end
 
-puts Benchmark.measure { prime?(number) } 
+puts Benchmark.measure { prime?(64564563456437456754845675647364734563456234234524352435234534675485697650896560895879086975574) } 
 
 
 
