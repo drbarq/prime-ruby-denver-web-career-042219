@@ -5,7 +5,7 @@ require 'benchmark'
 require 'bigdecimal/math'
 
 # calculate pi to 10k digits
-puts Benchmark.measure { prime?(154345) } 
+
 
 def prime?(number)
   if number > 1
@@ -15,6 +15,7 @@ def prime?(number)
   end
 end
 
+puts Benchmark.measure { prime?(154345) } 
 
 
 
