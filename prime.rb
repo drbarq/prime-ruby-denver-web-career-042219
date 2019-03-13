@@ -1,6 +1,12 @@
 # Add  code here!
 
 
+require 'benchmark'
+require 'bigdecimal/math'
+
+# calculate pi to 10k digits
+puts Benchmark.measure { prime?(number) } 
+
 def prime?(number)
   if number > 1
     (2..number-1).none? { |divide| number % divide == 0}
